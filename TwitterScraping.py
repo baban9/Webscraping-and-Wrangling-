@@ -68,7 +68,7 @@ def scrape_text_query(text_query, max_tweets):
 text_query = 'organic food'
 
 # Max recent tweets pulls x amount of most recent tweets from that user
-max_tweets = 150
+max_tweets = 15000
 
 # Function scrapes for tweets containing text_query, attempting to pull max_tweet amount and create csv/excel file containing data.
 scrape_text_query(text_query, max_tweets)
