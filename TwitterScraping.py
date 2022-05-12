@@ -13,12 +13,6 @@ ACCESS_SECRET = ''
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 
-API_KEY = 'gkWDkY8vrg6fFNW3QzhhMTHmb'
-
-API_secret_key = 'JyuQO12oqihDEZGehDvaYMcplIVuMaBgrcgKDZ9VpPXr8TPtfo'
-
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAABTHcQEAAAAAOxoyav%2FcpTxrHlvrQDqYpXlq%2F34%3DWioPlKnjquGm7M0GOd1W7QYvzwqQ0Q2j9ioDatYUJiecYjMgze'
-
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth,wait_on_rate_limit=True)
