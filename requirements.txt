@@ -1,4 +1,9 @@
-jupyterlab>=4.0.0
-pandas>=2.0.0
-beautifulsoup4>=4.12.0
-requests>=2.31.0
+jupyterlab>=4.2.5
+pandas>=2.2.3
+beautifulsoup4>=4.12.3
+requests>=2.32.3
+
+# Transitive security pins
+urllib3>=2.2.2
+certifi>=2024.8.30
+idna>=3.7
