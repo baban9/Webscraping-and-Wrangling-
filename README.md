@@ -1,15 +1,47 @@
-# Webscraping-Wrangling
+# Web Scraping and Data Wrangling
 
-This is a pilot project to extract tweets and create insights about the users and tweets sentiments. 
+Social media data collection and exploratory analysis for Twitter datasets across multiple topics.
 
-Through this pilot project, We can essentially unserstand the trend of the query being perceived into the twitter users world. 
-With a reach of 330 million users, it has an immense power to capture the attention through various practices namely, hashtags, advertisements, etc. 
+## Problem
 
-While performing certain tasks, the higher lever of understanding is that, eventually passing just the query and number of tweets this approach will give the time cummulative opinion of the query.
+Ingest public social text data, clean it for analysis, and build dashboards that surface trends.
 
-It will also give us insights of any patterns recognizable during the time frame. 
+## Approach
 
-To generate the Twitter tokens to access the tweets through their API 
-visit - https://www.slickremix.com/docs/how-to-get-api-keys-and-tokens-for-twitter/
+| Artifact | Role |
+|----------|------|
+| TwitterScraping.py | Data collection script |
+| Twitter dashboard.ipynb | EDA and visualization |
+| *.csv | Sample tweet datasets (organic food, farmers, coronavirus) |
 
-I hope this mini-project gives few insights, which further can be translated into bigger solutions.
+## Reproducibility
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab
+```
+
+For scraping, configure API credentials via environment variables (never commit keys):
+
+```bash
+export TWITTER_BEARER_TOKEN=your_token
+python TwitterScraping.py
+```
+
+## Tech stack
+
+Python 3, pandas, BeautifulSoup, requests, Jupyter
+
+## Data ethics
+
+- Respect platform Terms of Service and rate limits
+- Do not republish PII from scraped datasets
+- Prefer official APIs over brittle HTML scraping
+
+## Limitations and next steps
+
+- Move large CSVs to Git LFS or external storage
+- Add data dictionary for each CSV column
+- Parameterize queries in a config file instead of hardcoded strings
